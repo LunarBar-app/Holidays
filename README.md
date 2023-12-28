@@ -1,10 +1,10 @@
 # Holidays
 
-Online database of public holidays used in LunarBar.
+用于 [LunarBar](https://github.com/LunarBar-app/LunarBar) 应用的公共假日更新，使其可以在不更新应用的情况下更新节假日信息。
 
-## Example
+## 数据格式
 
-Here's an example to explain the public holiday format:
+以下是一个数据格式的简单样例（[完整例子](mainland-china.json)）：
 
 ```json
 {
@@ -15,6 +15,10 @@ Here's an example to explain the public holiday format:
 }
 ```
 
-It means that `2024/1/1` is a holiday (2), and `2024/2/4` is a workday (1), month and day should always be formatted as four digits.
+表示 `2024年1月1日` 是节假日，而 `2024年2月4日` 是工作日，月份和日期需要被格式化成 4 位。
 
-Open the `Holidays` directory in the app, put the definition file (must be `*.json`) there and select `Reload Customizations`.
+## 自定义
+
+LunarBar 内置的默认数据为中国大陆的节假日安排，你也可以按照上述格式自定义。
+
+在应用内打开公共假日所在目录，将自定义文件（扩展名必须为 json）放置到该目录，选择 `重载自定义假日` 即可。
